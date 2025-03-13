@@ -6,7 +6,7 @@ public class SubtractLoop2 {
 		do {
 			System.out.println(num);
 
-			num = num - 1;
+			num--;
 		} while (num >= 0);
 	}
 }
