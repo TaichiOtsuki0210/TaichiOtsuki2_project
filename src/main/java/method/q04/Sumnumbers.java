@@ -3,18 +3,18 @@ package method.q04;
 public class Sumnumbers {
 
 	public static void main(String[] args) {
-		int i = 3;
-		int j = 2;
-		int addAns = calculateSum(i, j);
-		System.out.println("第一引数：" + i);
-		System.out.println("第二引数：" + j);
+		int num1 = 3;
+		int num2 = 2;
+		int addAns = calculateSum(num1, num2);
+		System.out.println("第一引数：" + num1);
+		System.out.println("第二引数：" + num2);
 		System.out.println("加算結果：" + addAns);
 
 	}
 
-	public static int calculateSum(int i, int j) {
+	public static int calculateSum(int num1, int num2) {
 
-		int addAns = i + j;
+		int addAns = num1 + num2;
 		return addAns;
 	}
 

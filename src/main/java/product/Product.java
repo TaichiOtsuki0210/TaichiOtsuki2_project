@@ -50,6 +50,6 @@ public class Product {
 
 	//オーバーロード(引数を指定する)
 	public String toString() {
-		return "Product: id=" + id + ", name=" + name + ", price=" + price + ", stock=" + stock ;
+		return "Product: id=" + id + ", name=" + name + ", price=" + price + ", stock=" + stock;
 	}
 }

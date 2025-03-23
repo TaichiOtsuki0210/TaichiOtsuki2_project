@@ -2,11 +2,11 @@ package method.q08;
 
 public class SumLoop {
 	public static void main(String[] args) {
-		int i = 1;
-		int j = 100;
-		int sum = sumLoop(i, j);
-		System.out.println("最小値：" + i);
-		System.out.println("最大値：" + j);
+		int minNumber = 1;
+		int maxNumber = 100;
+		int sum = sumLoop(minNumber, maxNumber);
+		System.out.println("最小値：" + minNumber);
+		System.out.println("最大値：" + maxNumber);
 		System.out.println("加算結果：" + sum);
 	}
 
