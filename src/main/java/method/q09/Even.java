@@ -7,7 +7,7 @@ public class Even {
 		System.out.println(num + "は" + (result ? "偶数" : "奇数") + "です。");
 	}
 
-	public static boolean checkEven(int a) {
-		return a % 2 == 0;
+	public static boolean checkEven(int num) {
+		return num % 2 == 0;
 	}
 }

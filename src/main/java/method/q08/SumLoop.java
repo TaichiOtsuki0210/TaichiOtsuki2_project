@@ -10,10 +10,10 @@ public class SumLoop {
 		System.out.println("加算結果：" + sum);
 	}
 
-	public static int sumLoop(int i, int j) {
+	public static int sumLoop(int min, int max) {
 		int sum = 0;
-		for (int a = i; a <= j; a++) {
-			sum = sum + a;
+		for (int num = min; num <= max; num++) {
+			sum = sum + num;
 		}
 		return sum;
 	}
