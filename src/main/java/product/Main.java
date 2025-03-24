@@ -1,5 +1,7 @@
 package product;
 
+import java.util.List;
+
 public class Main {
 	public static void main(String[] args) {
 		ProductManager manager = new ProductManager();
@@ -34,5 +36,19 @@ public class Main {
 		} else {
 			System.out.println("商品が見つかりませんでした。");
 		}
+
+		//商品の割引を表示する
+		System.out.println("\n---商品名「ソファ」の情報と割引率30%の情報を表示する---");
+		DiscountedProduct discountedSofa = new DiscountedProduct(2, "ソファ", 30000, 5);
+		System.out.println(discountedSofa);
+
+		// 商品の検索（部分一致）
+		System.out.println("\n---商品名「Tシャツ」を検索して表示する---");
+		List<Product> searchResults = manager.search("Tシャツ");
+
+		for (Product product : searchResults) {
+			System.out.println(product);
+		}
+
 	}
 }

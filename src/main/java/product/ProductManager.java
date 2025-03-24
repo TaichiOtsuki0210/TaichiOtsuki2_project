@@ -3,7 +3,8 @@ package product;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductManager {
+
+public class ProductManager implements Searchable {
 	//Product.javaに対応したリスト"productsList"を作成
 	//紫のProductはジェネリクス
 	//ジェネリクスを使用したフィールドや(引数、戻り値を含めた)メソッドにProductが使用できる
@@ -43,5 +44,18 @@ public class ProductManager {
 	// 商品一覧を取得
 	public List<Product> getProductList() {
 		return productsList;
+	}
+
+	//Searchableインターフェイスの実装
+	public List<Product> search(String name) {
+		List<Product> results = new ArrayList<>();
+		for (Product product : productsList) {
+			// 部分一致検索 (name に含まれるかどうか)
+			if (product.getName().contains(name)) {
+				results.add(product);
+			}
+		}
+		return results;
+
 	}
 }
