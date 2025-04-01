@@ -6,8 +6,6 @@ public class ProductManagement {
 	private int price;
 	private int stock;
 
-	
-
 	public void Product(int id, String name, int price, int stock) {
 
 		this.id = id;
@@ -52,6 +50,4 @@ public class ProductManagement {
 		return "Product: id=" + id + ", name=" + name + ", price=" + price + ", stock=" + stock;
 	}
 
-		
-	}
-
+}
