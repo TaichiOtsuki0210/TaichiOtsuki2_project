@@ -35,8 +35,7 @@ public class ProductManagementInfo implements SearchProduct {
 		return null;
 	}
 
-	// 部分一致検索（商品名）
-	@Override
+	// 商品検索
 	public List<ProductManagement> search(String name) {
 		List<ProductManagement> results = new ArrayList<>();
 		for (ProductManagement product : productsList) {
